@@ -153,9 +153,9 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1.7853982
-  m_LinearDamping: 10
+  m_UseAutoMass: 0
+  m_Mass: 2.5
+  m_LinearDamping: 1
   m_AngularDamping: 1
   m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: 0d0131c23e3abbc4ca75d783b29ff482, type: 2}
@@ -309,10 +309,11 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  jumpVelocity: 60
+  jumpVelocity: 50
   castDistance: 0.94
   rayCastAngle: 0
   playerGravityWhileFloating: 50
+  isgroundedbool: 0
 --- !u!114 &42332354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d70e76064c273a4abe0b61076d086fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallJumpVelocity: {x: 500, y: 60}
+  wallJumpVelocity: {x: 100, y: 30}
+  wallGravityPercent: 80
   isOnWall: 0
 --- !u!61 &42332355
 BoxCollider2D:

@@ -5,6 +5,7 @@ public class WallJump : MonoBehaviour
     Rigidbody2D rb;
     public Vector2 wallJumpVelocity;
     bool jumpInput;
+    public float wallGravityPercent;
     public static bool IsOnWallBool;
     public bool isOnWall;
 
@@ -17,14 +18,13 @@ public class WallJump : MonoBehaviour
     private void Update()
     {
         jumpInput = Input.GetButtonDown("Jump");
-        print(IsOnWallBool);
-
+        IsOnWallBool = isOnWall;
     }
     private void FixedUpdate()
     {
         if (isOnWall && Input.GetAxisRaw("Horizontal") != 0)
         {
-            rb.gravityScale = PlayerJump.defaultGravityScale * 0.2f;
+            rb.gravityScale = PlayerJump.defaultGravityScale * wallGravityPercent / 100;
             if (jumpInput) JumpFromWall();
         }
     }
@@ -33,14 +33,15 @@ public class WallJump : MonoBehaviour
     {
         if (trigger.CompareTag("Ground")) isOnWall = true;
     }
-    void OnTriggerExit2D(Collider2D trigger)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         isOnWall = false;
+
     }
 
     public void JumpFromWall()
     {
-        rb.AddForce(1000 * Time.fixedDeltaTime * Time.fixedDeltaTime * new Vector2(-Input.GetAxisRaw("Horizontal") * wallJumpVelocity.x, wallJumpVelocity.y), ForceMode2D.Impulse);
+        rb.AddForce(100 * Time.fixedDeltaTime * new Vector2(-Input.GetAxisRaw("Horizontal") * wallJumpVelocity.x, wallJumpVelocity.y), ForceMode2D.Impulse);
     }
 
 }

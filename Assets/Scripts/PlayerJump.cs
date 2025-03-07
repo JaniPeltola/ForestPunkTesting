@@ -11,8 +11,9 @@ public class PlayerJump : MonoBehaviour
     public float playerGravityWhileFloating = 50;
     bool jumpInput;
     bool floatInput;
-    bool isOnWallBool;
     public static float defaultGravityScale;
+    public static bool isGroundedBool;
+    public bool isgroundedbool;
 
 
     void Start()
@@ -25,17 +26,18 @@ public class PlayerJump : MonoBehaviour
     {
         jumpInput = Input.GetButtonDown("Jump");
         floatInput = Input.GetButton("Jump");
-        isOnWallBool = WallJump.IsOnWallBool;
+        isGroundedBool = IsGrounded();
+        isgroundedbool = isGroundedBool;
     }
     private void FixedUpdate()
     {
 
-        if (jumpInput && IsGrounded())
+        if (jumpInput && IsGrounded() && !WallJump.IsOnWallBool)
         {
             Jump();
         }
 
-        if (floatInput && !IsGrounded() && !isOnWallBool && rb.linearVelocityY < 0)
+        if (floatInput && !IsGrounded() && !WallJump.IsOnWallBool && rb.linearVelocityY < 0)
         {
             PlayerFloat();
         }
@@ -49,23 +51,35 @@ public class PlayerJump : MonoBehaviour
 
     public void PlayerFloat()
     {
-        rb.gravityScale = playerGravityWhileFloating / 100;
+        rb.gravityScale = defaultGravityScale * playerGravityWhileFloating / 100;
     }
     public bool IsGrounded()
     {
+
         if (Physics2D.BoxCast(transform.position, boxSize, rayCastAngle, -transform.up, castDistance, groundLayer))
         {
-            return true;
+            if (!WallJump.IsOnWallBool)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
+
         else
         {
             return false;
         }
+
     }
     void OnDrawGizmos()
     {
         Gizmos.DrawCube(transform.position - transform.up * castDistance, boxSize);
     }
+
 }
+
 
 
