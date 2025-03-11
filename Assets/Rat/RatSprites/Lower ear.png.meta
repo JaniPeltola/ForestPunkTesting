@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e448e99ac1b1c3f4c92ab961dc9b1e17
+guid: 67d8fe5357cb29b4fbbebb89d58e5259
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 687830315011065422
-    second: pexels-simon73-1183099_0
+      213: -2687466260615185220
+    second: Lower ear_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pexels-simon73-1183099_0
+      name: Lower ear_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6885
-        height: 4534
+        x: 693
+        y: 563
+        width: 148
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e46caf7f60aab8900800000000000000
-      internalID: 687830315011065422
+      spriteID: cbc3f2ebca334bad0800000000000000
+      internalID: -2687466260615185220
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pexels-simon73-1183099_0: 687830315011065422
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

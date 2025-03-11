@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e448e99ac1b1c3f4c92ab961dc9b1e17
+guid: ea412cb99e0ef8346921811a17e009ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 687830315011065422
-    second: pexels-simon73-1183099_0
+      213: -1201772774456808696
+    second: Crossbow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pexels-simon73-1183099_0
+      name: Crossbow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6885
-        height: 4534
+        x: 739
+        y: 257
+        width: 227
+        height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e46caf7f60aab8900800000000000000
-      internalID: 687830315011065422
+      spriteID: 80b24c56702725fe0800000000000000
+      internalID: -1201772774456808696
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bce03de561a48eb4691d3c4e64da3ef2
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pexels-simon73-1183099_0: 687830315011065422
+      Crossbow_0: -1201772774456808696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

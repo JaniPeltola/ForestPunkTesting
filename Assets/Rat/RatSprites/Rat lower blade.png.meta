@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e448e99ac1b1c3f4c92ab961dc9b1e17
+guid: 0f3bf40dca0ee9945b6ef9c98b35f34a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 687830315011065422
-    second: pexels-simon73-1183099_0
+      213: -604264282162282561
+    second: Rat lower blade_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pexels-simon73-1183099_0
+      name: Rat lower blade_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6885
-        height: 4534
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 83
+        y: 456
+        width: 270
+        height: 217
+      alignment: 9
+      pivot: {x: 0.81865203, y: 0.88736457}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e46caf7f60aab8900800000000000000
-      internalID: 687830315011065422
+      spriteID: fbfb24f36d83d97f0800000000000000
+      internalID: -604264282162282561
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e229e9f3428c2fd459841e7d558eac6b
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pexels-simon73-1183099_0: 687830315011065422
+      Rat lower blade_0: -604264282162282561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
